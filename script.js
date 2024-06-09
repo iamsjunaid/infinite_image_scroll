@@ -21,3 +21,8 @@ function fetchImages() {
 // Call fetchImages when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', fetchImages);
 
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    fetchImages();
+  }
+});
