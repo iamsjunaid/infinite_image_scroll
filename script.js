@@ -26,3 +26,25 @@ window.addEventListener('scroll', () => {
     fetchImages();
   }
 });
+
+document.addEventListener('keydown', (event) => {
+  const gallery = document.getElementById('gallery-container');
+  switch (event.key) {
+    case 'ArrowRight':
+      // Scroll to the right
+      gallery.scrollBy({ left: 300, behavior: 'smooth' });
+      break;
+    case 'ArrowLeft':
+      // Scroll to the left
+      gallery.scrollBy({ left: -300, behavior: 'smooth' });
+      break;
+    case 'ArrowDown':
+      // Scroll down
+      gallery.scrollBy({ top: 300, behavior: 'smooth' });
+      break;
+    case 'ArrowUp':
+      // Scroll up
+      gallery.scrollBy({ top: -300, behavior: 'smooth' });
+      break;
+  }
+});
