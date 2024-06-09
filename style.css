@@ -6,3 +6,8 @@ body{
   font-style: normal;
   background-color: darkgrey;  
 }
+
+#app{
+  width: 95%;
+  margin: 0 auto;
+}
