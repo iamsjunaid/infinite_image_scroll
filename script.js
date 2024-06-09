@@ -16,3 +16,8 @@ function fetchImages() {
       page++;
     });
 }
+
+
+// Call fetchImages when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', fetchImages);
+
