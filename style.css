@@ -16,3 +16,24 @@ body{
   text-align: center;
   margin: 20px 0;
 }
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#gallery-container img {
+  width: 90%; 
+  height: 200px; 
+  object-fit: cover; 
+  transition: 0.5s ease;
+  border: 5px solid #fff;
+  border-radius: 20px;
+}
+
+
+#gallery-container div {
+  height: 250px; 
+  overflow: hidden; 
+}
