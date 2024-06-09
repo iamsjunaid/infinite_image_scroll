@@ -48,3 +48,11 @@ document.addEventListener('keydown', (event) => {
       break;
   }
 });
+
+document.getElementById('resize-slider').addEventListener('input', (event) => {
+  console.log('input:',event.target.value);
+  const numberOfImagesPerRow = event.target.value;
+  const gallery = document.getElementById('gallery-container');
+  // Update the grid-template-columns based on the slider value
+  gallery.style.gridTemplateColumns = `repeat(${numberOfImagesPerRow}, 1fr)`;
+});
